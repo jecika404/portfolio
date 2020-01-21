@@ -1,0 +1,62 @@
+// Section Project //
+.section-project {
+    margin-bottom: 20rem;
+    
+    @include respond(tab-land) {
+        margin-bottom: 15rem !important;
+    }
+    @include respond(tab-port) {
+        margin-bottom: 15rem !important;
+    }
+    @include respond(phone) {
+        margin-bottom: 15rem !important;
+
+    }
+
+}
+
+.card-project {
+    margin-top: 3.5rem;
+    transition: transform .5s;
+    &:hover,
+    &:active {
+
+        transform: translateY(-.70rem);
+    }
+    .see-project {
+        width: 100%;
+        background-color: $first-color;
+        &:hover{background-color: $first-color-dark;}
+        transition: all .3s;
+    }
+    .card-content {
+        color: $font-color;
+        font-size: 2rem;
+        padding: 0 1.5rem 0 1.5rem;
+        
+        @include respond(tab-land) {
+            font-size: 1.5rem;
+        }
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
+        @include respond(phone) {
+            font-size: 1.7rem;
+    
+        }
+
+
+        .heading-project {
+            text-align: center;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            .material-icons {
+                color: $first-color;
+            }
+        }
+
+        
+    }
+}

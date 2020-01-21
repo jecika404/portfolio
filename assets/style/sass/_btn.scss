@@ -1,0 +1,43 @@
+// Fixed Button
+.fixed-action-btn {
+    .fixed-btn {
+        background-color: #ee5253;
+        i {
+            font-size: 3.5rem;
+        }
+    }
+    ul {
+        li {
+            .home {
+                i {
+                    font-size: 2.7rem;
+                }
+                background-color: #ee5253;
+                
+            }
+            .about {
+                i {
+                    font-size: 2.7rem;
+                }
+                background-color: $first-color;
+                
+            }
+            .project {
+                i {
+                    font-size: 2.7rem;
+                }
+                background-color: $thrth-color;
+               
+            }
+            .contact {
+                i {
+                    font-size: 2.7rem;
+                }
+                background-color: $second-color;
+                
+            }
+        }
+    }
+}
+
+

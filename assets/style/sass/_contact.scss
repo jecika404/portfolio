@@ -1,0 +1,113 @@
+// Section Contact
+.contact-form {
+
+    @include respond(phone) {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;      
+    }
+    @include respond(tab-port) {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    @include respond(tab-land) {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important; 
+    }
+    
+    form {
+        .input-field {
+            @include respond(phone) {
+                font-size: 5rem;      
+            }
+            @include respond(tab-port) {
+                font-size: 5rem; 
+            }
+            @include respond(tab-land) {
+                font-size: 5rem;
+            }
+            padding-bottom: 2rem;
+            label {
+                @include respond(phone) {
+                    font-size: 2rem;      
+                }
+                @include respond(tab-port) {
+                    font-size: 2rem; 
+                }
+                @include respond(tab-land) {
+                    font-size: 2rem;
+                }
+                font-size: 1.3rem;
+                
+            }
+        }
+    }
+}
+
+.contact-bg {
+    clip-path: polygon(0 0, 80% 0%, 77% 74%, 0% 100%);
+    background-image: url('../img/register.jpg');
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include respond(tab-land) {
+        display: none !important;     
+    }
+    @include respond(tab-port) {
+        display: none !important; 
+    }
+    @include respond(phone) {
+        display: none !important;     
+    }
+
+  
+}
+.contact-form {
+    padding: 0 3rem 3rem 3rem !important;
+    @include respond(tab-land) {
+        padding: 0 10rem 10rem 10rem !important;     
+    }
+    @include respond(tab-port) {
+        padding: 0 10rem 10rem 10rem !important;  
+    }
+    @include respond(phone) {
+        padding: 0 3rem 3rem 3rem !important;      
+    }
+}
+.btn-contact {
+    width: 100%;
+    background-color: $first-color;
+    &:hover{
+        transition: all .4s;
+        background-color: $first-color-dark;
+    }
+
+}
+
+// Section Social Media
+.social-media {
+
+    margin-top: 0.5rem;
+    align-items: center;
+    h3{
+        color: $font-color;
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+    .social-btn-lay {
+        text-align: center;
+        margin-top: 3rem;
+        transition: all .4s;
+        .social-btn {
+            margin-left: 1.2rem;
+            align-content: center;
+            background-color: $second-color;
+            &:hover{background-color: $second-color-dark}
+            i {
+                font-size:2.4rem;
+            }
+        }
+    }
+    
+}

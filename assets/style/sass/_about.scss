@@ -1,0 +1,87 @@
+// Section About
+.section-about {
+    margin: 20rem 0 20rem 0;
+    @include respond(tab-land) {
+        margin-bottom: 15rem;
+    }
+    .biography-img {
+        margin-top: 8rem;
+        padding: 0rem;
+        @include respond(tab-land) {
+            text-align: center !important;
+            margin-top: 4rem;
+        }
+        @include respond(tab-port) {
+            text-align: center !important;
+            margin-top: 6rem; 
+        }
+        @include respond(phone) {
+            text-align: center !important;     
+        }
+        .about-img {
+            width: 40rem;
+            @include respond(tab-land) {
+                width: 40rem;
+            }
+            @include respond(tab-port) {
+                width: 37em; 
+            }
+            @include respond(phone) {
+                width: 30rem;     
+            }
+        }
+    }
+    .biography {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8rem;
+             
+            @include respond(tab-land) {
+                margin-top: 5rem;
+                padding-left: 1rem;
+            }
+            
+            .text-biog {
+                font-size: 2.3rem;
+                color: $font-color;
+                margin-bottom: 2rem;
+
+                @include respond(tab-land) {
+                    font-size: 2.2rem;
+                }
+                @include respond(tab-port) {
+                    font-size: 2rem; 
+                }
+                @include respond(phone) {
+                    font-size: 2rem;      
+                }
+            }
+        }
+        .skills-btn {
+            font-size: 2rem;
+            transition: all .4s;
+            background-color: $first-color;
+            &:hover {background-color: $first-color-dark;}
+
+            @include respond(tab-land) {
+                font-size: 2.3rem;
+                margin-top: 1rem;
+            }
+            @include respond(tab-port) {
+                font-size: 2.5rem; 
+            }
+            @include respond(phone) {
+                font-size: 2rem;      
+            }
+            
+        }   
+    }
+   
+   // Modal Skills //
+    #skills {
+        .range-field {
+            font-size: 1.8rem;
+            color: $font-color;
+        }
+    }
+    

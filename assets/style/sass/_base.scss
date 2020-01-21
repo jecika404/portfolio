@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+html {
+    font-size: 62.5%;
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+    @include respond(big-desktop) {
+        font-size: 75%;
+    }
+}
+body {
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $font-color;
+    box-sizing: border-box;  
+    background-color:#eeeff1;
+}
+
+// Typography //
+
+.heading-text {
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, max-content) 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    &::before,
+    &::after {
+        content: "";
+        height: .2rem;
+        display: block;
+        background-color: $first-color;
+    }
+}
+
+.heading-2 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: $font-color;
+    line-height: 1;
+
+}
+
+.heading-4 {
+    font-size: 3rem;
+    text-align: center;
+    color: $font-color;
+    border-bottom: 0.2rem solid $second-color;
+}
+

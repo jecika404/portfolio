@@ -1,0 +1,135 @@
+// Section Hero-Bg
+.hero {
+    background-image: url('../img/hero.jpg');
+    height: 100vh;
+    background-position: top; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+// Hello World
+.hw {
+    width: 35rem;
+    margin-left: 10rem;
+    background-color: rgba(12, 36, 97, 0.7);
+    clip-path: polygon(0 10%, 100% 10%, 100% 76%, 77% 76%, 86% 100%, 57% 76%, 0% 75%);
+
+    @include respond(tab-land) {
+        width: 35rem;
+        margin-left: 7rem;
+    }
+    @include respond(tab-port) {
+        width: 30rem;
+        margin-left: 5rem;
+    }
+    @include respond(phone) {
+        width: 20rem;
+        margin-left: 1rem;
+    
+    }
+    
+    .hw-text {
+        text-align: center;
+        font-size: 5rem;
+        margin: 1rem;
+        @include respond(tab-land) {
+            font-size: 4rem;
+            margin: 1rem;
+        }
+        @include respond(tab-port) {
+            font-size: 3.5rem;
+            margin: 1rem;
+        }
+        @include respond(phone) {
+            font-size: 2.2rem; 
+        }     
+    }   
+}
+
+// Name
+.name {
+    width: 35rem;
+    margin-left: 25rem;
+    text-align: center;
+    background-color: rgba(255, 118, 117, 0.7);
+    clip-path: polygon(0 10%, 100% 10%, 100% 75%, 40% 76%, 0 100%, 21% 75%, 0% 75%);
+    @include respond(tab-land) {
+        width: 35rem;
+        margin-left: 15rem;
+    }
+    @include respond(tab-port) {
+        width: 25rem;
+        margin-left: 20rem !important;
+    }
+    @include respond(phone) {
+        width: 20rem;
+        margin-left: 1rem !important;
+    }
+    .name-hero {
+        font-size: 2.5rem;
+        @include respond(tab-land) {
+            font-size: 2.5rem;
+        }
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
+ 
+    }
+    .hero-text-name {
+        font-size: 8rem;
+        @include respond(tab-land) {
+            font-size: 7rem;
+        }
+        @include respond(tab-port) {
+            font-size: 6rem;
+        }
+        @include respond(phone) {
+            font-size: 4rem;
+        }
+        
+    }
+}
+// Developer
+.developer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 35rem;
+    margin-left: 3rem;
+    background-color: rgba(1, 163, 164, 0.7);
+    clip-path: polygon(0 10%, 100% 10%, 100% 76%, 77% 76%, 86% 100%, 57% 76%, 0% 75%);
+    p {
+        padding-bottom: 3rem; 
+    }
+    @include respond(tab-land) {
+        width: 35rem;
+        margin-left: 3rem;
+    }
+    @include respond(tab-port) {
+        width: 25rem;
+        margin-left: 1rem;
+    }
+    @include respond(phone) {
+
+        width: 17rem;
+        margin-left: .5rem;
+
+    }
+    .dev-text {
+        font-size: 6rem;
+        line-height: 1em;
+        @include respond(tab-land) {
+            font-size: 5rem;
+        }
+        @include respond(tab-port) {
+            font-size: 4rem; 
+        }
+        @include respond(phone) {
+            font-size: 2.5rem; 
+        }      
+    }
+
+}
